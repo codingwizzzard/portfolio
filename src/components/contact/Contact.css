@@ -1,0 +1,54 @@
+.contact__container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    gap: 1.5rem; /* Add space between contact__info divs */
+    margin-top: 2rem;
+}
+
+.contact__info {
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make each contact__info take full width */
+    text-align: center; /* Center the text */
+}
+
+.contact__name {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 0.5rem;
+    color: var(--title-color);
+}
+
+.contact__email {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact__container {
+        padding: 0 1rem;
+    }
+
+    .contact__info {
+        padding: 1rem;
+    }
+
+    .contact__name {
+        font-size: var(--normal-font-size);
+    }
+
+    .contact__email {
+        font-size: var(--small-font-size);
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact__info {
+        width: 100%;
+    }
+}

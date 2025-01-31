@@ -1,0 +1,29 @@
+.footer {
+    background-color: var(--container-color);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem; /* Add space between contact section and footer */
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 1.5rem 0;
+    }
+
+    .footer__text {
+        font-size: var(--small-font-size);
+    }
+}
